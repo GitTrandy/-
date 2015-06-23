@@ -8,6 +8,6 @@
 
 #import "RootViewController.h"
 
-@interface MovesViewController : RootViewController
+@interface MovesViewController : RootViewController<UITableViewDelegate,UITableViewDataSource>
 
 @end

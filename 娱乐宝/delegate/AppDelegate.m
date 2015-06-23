@@ -35,9 +35,9 @@
     
     mainCtr.title  = @"主页";
     moreCtr.title  = @"更多";
-    musicCtr.title = @"音乐";
-    movesCtr.title = @"影视";
-    novelCtr.title = @"小说";
+    musicCtr.title = @"Music";
+    movesCtr.title = @"影音";
+    novelCtr.title = @"绘图动画";
     
     
     UINavigationController *mainNaCtr  = [[UINavigationController alloc] initWithRootViewController:mainCtr];
@@ -46,11 +46,13 @@
     UINavigationController *novelNaCtr = [[UINavigationController alloc] initWithRootViewController:novelCtr];
     UINavigationController *movesNaCtr = [[UINavigationController alloc] initWithRootViewController:movesCtr];
     
-    mainCtr.tabBarItem.image  = [UIImage imageNamed:@""];
-    movesCtr.tabBarItem.image = [UIImage imageNamed:@""];
-    musicCtr.tabBarItem.image = [UIImage imageNamed:@""];
-    movesCtr.tabBarItem.image = [UIImage imageNamed:@""];
-    novelCtr.tabBarItem.image = [UIImage imageNamed:@""];
+    UITabBarItem *mainItem = [[UITabBarItem alloc] initWithTitle:@"主页" image:[UIImage imageNamed:@"face@2x.png"] selectedImage:[UIImage imageNamed:@"ReceiverVoiceNodePlaying"]];
+    
+    mainCtr.tabBarItem = mainItem;
+    movesCtr.tabBarItem.image = [UIImage imageNamed:@"face@2x.png"];
+    musicCtr.tabBarItem.image = [UIImage imageNamed:@"ReceiverVoiceNodePlaying@2x"];
+    moreCtr.tabBarItem.image = [UIImage imageNamed:@"ReceiverVoiceNodePlaying@2x"];
+    novelCtr.tabBarItem.image = [UIImage imageNamed:@"ReceiverVoiceNodePlaying"];
 
     mainNaCtr.tabBarItem.badgeValue = @"9";
     
@@ -65,6 +67,8 @@
     return YES;
 }
 - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+    
+    //viewController.tabBarItem.title = @"被选中";
 
 }
 

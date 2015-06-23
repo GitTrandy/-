@@ -15,7 +15,7 @@
 <
 UIWebViewDelegate
 >
-
+@property(nonatomic,strong)UIWebView *webView;
 @end
 
 @implementation WebMovesController
@@ -23,14 +23,16 @@ UIWebViewDelegate
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    UIWebView *webView = [[UIWebView alloc] init];
-    webView.frame = CGRectMake(0, 0,kWIDTH, kHIGHT);
-    webView.userInteractionEnabled = YES;
-    webView.delegate = self;
-    [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webURL]]];
-    [self.view addSubview:webView];
-    [webView setScalesPageToFit:YES];
-    [webView setOpaque:YES];
+    
+    _webView = [[UIWebView alloc] init];
+    _webView.frame = CGRectMake(0, 0,kWIDTH, kHIGHT);
+    _webView.userInteractionEnabled = YES;
+    _webView.delegate = self;
+    [_webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.webURL]]];
+    
+    [self.view addSubview:_webView];
+    [_webView setScalesPageToFit:YES];
+    [_webView setOpaque:YES];
 
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"city"]=@"北京";
@@ -40,7 +42,7 @@ UIWebViewDelegate
     params[@"moneyCount"]=@"100000";
     params[@"userID"]=@"372923198912034410";
     
-  //  [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.webURL]];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:self.webURL]];
     
 
 }
