@@ -148,6 +148,7 @@
     NSLog(@"predicateString %@",predicateString);
     NSMutableArray  *filteredArray = [NSMutableArray arrayWithArray:[custList filteredArrayUsingPredicate:predicateString]];
     _dataArray = filteredArray;
+    NSLog(@"_dataArray is %@",_dataArray);
     [_myTabBar reloadData];
     
 }

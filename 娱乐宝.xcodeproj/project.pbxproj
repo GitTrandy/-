@@ -250,6 +250,8 @@
 		20E019421AE4FB4100939900 /* AnimationsArrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20E019401AE4FB4100939900 /* AnimationsArrViewController.m */; };
 		20E019431AE4FB4100939900 /* AnimationsArrViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 20E019411AE4FB4100939900 /* AnimationsArrViewController.xib */; };
 		20F8CC6C1B1FDFD900FBE833 /* setBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 20F8CC6B1B1FDFD900FBE833 /* setBackground.png */; };
+		7F3FAEDF1B3AB4EB00F3992A /* MyMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F3FAEDD1B3AB4EB00F3992A /* MyMusicViewController.m */; };
+		7F3FAEE01B3AB4EB00F3992A /* MyMusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F3FAEDE1B3AB4EB00F3992A /* MyMusicViewController.xib */; };
 		7F53D53C1B30049C003CF800 /* play in Resources */ = {isa = PBXBuildFile; fileRef = 7F53D53B1B30049C003CF800 /* play */; };
 		7F5D06251B33F94D0022FE27 /* JKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5D06231B33F94D0022FE27 /* JKRecordViewController.m */; };
 		7F5D06261B33F94D0022FE27 /* JKRecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F5D06241B33F94D0022FE27 /* JKRecordViewController.xib */; };
@@ -618,6 +620,9 @@
 		20E019401AE4FB4100939900 /* AnimationsArrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationsArrViewController.m; sourceTree = "<group>"; };
 		20E019411AE4FB4100939900 /* AnimationsArrViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AnimationsArrViewController.xib; sourceTree = "<group>"; };
 		20F8CC6B1B1FDFD900FBE833 /* setBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setBackground.png; sourceTree = "<group>"; };
+		7F3FAEDC1B3AB4EB00F3992A /* MyMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMusicViewController.h; sourceTree = "<group>"; };
+		7F3FAEDD1B3AB4EB00F3992A /* MyMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMusicViewController.m; sourceTree = "<group>"; };
+		7F3FAEDE1B3AB4EB00F3992A /* MyMusicViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyMusicViewController.xib; sourceTree = "<group>"; };
 		7F53D53B1B30049C003CF800 /* play */ = {isa = PBXFileReference; lastKnownFileType = folder; path = play; sourceTree = "<group>"; };
 		7F5D06221B33F94D0022FE27 /* JKRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKRecordViewController.h; sourceTree = "<group>"; };
 		7F5D06231B33F94D0022FE27 /* JKRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKRecordViewController.m; sourceTree = "<group>"; };
@@ -1103,6 +1108,9 @@
 				20A945D31AC91F31007673EA /* MusicViewController.h */,
 				20A945D41AC91F31007673EA /* MusicViewController.m */,
 				20A945D51AC91F31007673EA /* MusicViewController.xib */,
+				7F3FAEDC1B3AB4EB00F3992A /* MyMusicViewController.h */,
+				7F3FAEDD1B3AB4EB00F3992A /* MyMusicViewController.m */,
+				7F3FAEDE1B3AB4EB00F3992A /* MyMusicViewController.xib */,
 			);
 			path = music;
 			sourceTree = "<group>";
@@ -1692,6 +1700,7 @@
 				20BF36621AE6492500938B17 /* CADisplayLinkViewController.xib in Resources */,
 				203FFAE21AE68B5400996BAF /* b6.png in Resources */,
 				20BF364A1AE6356E00938B17 /* 2.png in Resources */,
+				7F3FAEE01B3AB4EB00F3992A /* MyMusicViewController.xib in Resources */,
 				20A9461E1AC91F40007673EA /* Info.plist in Resources */,
 				7FD72E741B30501000D21612 /* MPViewController.xib in Resources */,
 				20E019351AE4D5AE00939900 /* AnimationValuesViewController.xib in Resources */,
@@ -1856,6 +1865,7 @@
 				20764BD91ADE37AB00B83322 /* CutomViewController.m in Sources */,
 				201148421B0B3E7C00E4DE76 /* Dog.m in Sources */,
 				20D207261B172F3D00B2BEDA /* SKMulticolumnTableViewCell.m in Sources */,
+				7F3FAEDF1B3AB4EB00F3992A /* MyMusicViewController.m in Sources */,
 				20429FE61AD7D4DB006D7991 /* WSIconView.m in Sources */,
 				20D207371B172F3D00B2BEDA /* SKWebToolBarItem.m in Sources */,
 				20D2071E1B172F3D00B2BEDA /* SKAlertView.m in Sources */,
